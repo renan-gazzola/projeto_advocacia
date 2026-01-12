@@ -1,0 +1,160 @@
+    :root {
+        --primary-color: #C9B37E;   /* dourado discreto */
+        --secondary-color: #1F2A44; /* azul jurídico */
+        --tertiary-color: #F5F5F5;  /* cinza claro */
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background-color: var(--primary-color);
+    }
+
+    .titulo{
+        color: #F5F5F5;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .nav a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .nav a:hover {
+        color: var(--primary-color);
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+
+    section {
+        max-width: 1100px;
+        margin: 0 auto 60px;
+        padding: 0 20px;
+    }
+
+
+    h1 {
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    header {
+        margin-top: auto;
+        background-color: var(--secondary-color);
+    }
+
+    .logo {
+        color: var(--primary-color);
+        font-size: 1.4rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+
+    .hero-btn {
+        color: var(--primary-color);
+        font-weight: bold;
+        transition: color 0.3s;
+        align-items: center;
+        text-decoration: none;
+        background-color: var(--secondary-color);
+        border-radius: 15px;
+        padding: 14px 22px;
+        font-size: 0.95rem;
+    }
+
+    .hero-btn:hover {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .card img {
+        width: 400px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 12px;
+    }
+
+    .card {
+        background-color: var(--tertiary-color);
+        border: 1px solid var(--primary-color);
+        border-color: black;
+        border-radius: 8px;
+        padding: 20px;
+    }
+
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    section {
+        margin-bottom: 60px;
+    }
+
+    .hero,
+    #contato {
+        text-align: center;
+    }
+
+    section p {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto 20px;
+    }
+
+    #contato{
+        align-items: center;
+        text-align: center;
+    }
+
+    .contato p {
+        max-width: 600px;
+        margin: 0 auto 20px;
+    }
+
+    footer {
+        background-color: var(--secondary-color);
+        color: var(--tertiary-color);
+        text-align: center;
+        padding: 1rem;
+        margin-top: auto;
+    }
